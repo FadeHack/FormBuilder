@@ -32,10 +32,10 @@ const JsonEditor = () => {
   };
 
   return (
-<div className="w-screen h-90v flex p-4 border-r border-gray-300">
+<div className="w-screen h-90v flex p-4 flex-col sm:flex-row">
   <textarea
-    spellcheck="false"
-    className={`w-1/2 h-full p-2 border border-gray-300 ${hasError && 'border-red-500'} bg-slate-600 text-white font-mono`}
+    spellCheck="false"
+    className={`w-full sm:w-1/2 h-full sm:h-full p-2 border border-gray-300 rounded m-2 ${hasError && 'border-red-500'} bg-slate-600 text-white font-mono`}
     placeholder="Paste UI Schema here"
     onChange={(e) => handleJsonChange(e.target.value)}
   ></textarea>
@@ -45,10 +45,11 @@ const JsonEditor = () => {
       uiSchema={uiSchema}
       formData={formData}
       setFormData={setFormData}
-      className="w-1/2 h-full overflow-scroll" // Adjusted height and added overflow-y-auto
+      className="w-full sm:w-1/2 h-full" // Adjusted height and added overflow-y-auto
     />
   )}
 </div>
+
 
   );
 };
