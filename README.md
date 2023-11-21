@@ -40,7 +40,6 @@ This section showcases the results of submitting a form designed using FormBuild
 FormBuilder is designed with responsiveness in mind. The UI seamlessly adapts to various screen sizes, ensuring a consistent and user-friendly experience on mobile devices.
 
 ![Responsive Mobile UI](/screenshots/mobile.png)
-*Description: [Illustrate how the FormBuilder UI appears and functions on mobile devices]*
 
 
 ## How to Run
